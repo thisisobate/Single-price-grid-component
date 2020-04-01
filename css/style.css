@@ -1,4 +1,32 @@
 .section-b {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+}
+
+.component {
+  margin: 15%;
+  border: 2px solid red;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
+.section-a {
+  border: 2px solid yellowgreen;
+}
+
+.box1 {
+  border: 2px solid rgb(50, 161, 205);
+}
+
+.box2 {
+  border: 2px solid rgb(231, 10, 165);
+}
+
+.container{
+ 
+}
+
+.container > h2{
+  font-weight: 700;
 }
