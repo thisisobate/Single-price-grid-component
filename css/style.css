@@ -13,15 +13,22 @@ body {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
   background-color: #ffffff;
+}
+
+.section-a {
+  padding-top: 1px;
 }
 
 .box1 {
   background-color: #2bb3b1;
+  border-bottom-left-radius: 5px;
 }
 
 .box2 {
   background-color: #4abebd;
+  border-bottom-right-radius: 5px;
 }
 
 .container {
