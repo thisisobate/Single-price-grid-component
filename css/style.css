@@ -1,14 +1,21 @@
 .section-b {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   border: 2px solid black;
 }
 
+body {
+  background-color: #e6eff6;
+}
+
 .component {
-  margin: 15%;
+  margin: 11% 24%;
+  width: 50%;
   border: 2px solid red;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
 }
 
 .section-a {
@@ -17,16 +24,82 @@
 
 .box1 {
   border: 2px solid rgb(50, 161, 205);
+  background-color: #2bb3b1;
 }
 
 .box2 {
   border: 2px solid rgb(231, 10, 165);
+  background-color: #4abebd;
 }
 
-.container{
- 
+.container {
+  margin: 40px;
+  color: #ffffff;
 }
 
-.container > h2{
+.container > h2 {
   font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+
+.paragraph {
+  line-height: 25px;
+  color: hsl(210, 5%, 64%);
+}
+
+.sub-heading {
+  font-weight: 700;
+}
+
+.yellow_txt {
+  color: hsl(71, 73%, 54%);
+  font-size: large;
+}
+
+.text_box {
+  line-height: 23.5px;
+  font-size: 15px;
+  color: #d1e7e7;
+}
+
+.big_text {
+  font-weight: 700;
+  font-size: 35px;
+  padding-right: 10px;
+}
+
+.light_lemon {
+  color: #ebe7e7;
+}
+.text_section {
+  display: flex;
+  align-items: center;
+  border: 2px solid red;
+  margin-top: -25px;
+}
+
+button {
+  margin-top: 40px;
+  width: 100%;
+  padding: 14px;
+  font-weight: 700;
+  font-family: 'Karla', sans-serif;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: none;
+  background-color: #bfdf32;
+  color: #ffffff;
+}
+
+@media (max-width: 770px) {
+  .component {
+    margin: 10%;
+    width: 80%;
+  }
+
+  .section-b {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
 }
